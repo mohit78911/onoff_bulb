@@ -24,6 +24,19 @@ export default function App() {
 
   return (
     <>
+      <button className="setoficon" onClick={() => darkModeHandler()}>
+        {darkMode ? (
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png"
+            width={30}
+          />
+        ) : (
+          <img
+            src="https://png.pngtree.com/element_our/20190529/ourmid/pngtree-night-icon-image_1198543.jpg"
+            width={30}
+          />
+        )}
+      </button>
       <div>
         <h1 style={{ opacity: "0.5", fontFamily: "fantasy" }}>Bulb On-Off</h1>
       </div>
@@ -37,13 +50,13 @@ export default function App() {
       ) : (
         <div>
           <img
-            src="https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg"
-            width={375}
+            src="https://i.ibb.co/2WV9gxD/onbulb-removebg-preview.png"
+            width={500}
           />
         </div>
       )}
       <button onClick={() => setOff(!on)}>{on ? "On" : "Off"}</button>
-      <button onClick={() => darkModeHandler()}>{darkMode? "Dark mode" : "light Mode"}</button>
+      &nbsp;&nbsp;&nbsp;
     </>
   );
 }
