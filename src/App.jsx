@@ -26,15 +26,22 @@ export default function App() {
     <>
       <button className="setoficon" onClick={() => darkModeHandler()}>
         {darkMode ? (
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png"
-            width={30}
-          />
+          <>
+            {" "}
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png"
+              width={30}
+            />
+            <h3>Light Mode</h3>
+          </>
         ) : (
-          <img
-            src="https://png.pngtree.com/element_our/20190529/ourmid/pngtree-night-icon-image_1198543.jpg"
-            width={30}
-          />
+          <>
+            <img
+              src="https://png.pngtree.com/element_our/20190529/ourmid/pngtree-night-icon-image_1198543.jpg"
+              width={30}
+            />
+            <h3>Dark Mode</h3>
+          </>
         )}
       </button>
       <div>
@@ -43,16 +50,18 @@ export default function App() {
       {on ? (
         <div>
           <img
-            src="https://freepngimg.com/save/31669-bulb-off-transparent-image/500x500"
-            width={500}
+            src="https://i.ibb.co/L0hnLs2/n1-removebg-preview.png"
+            width={240}
           />
+          <h4>Now Bulb is ON</h4>
         </div>
       ) : (
         <div>
           <img
-            src="https://i.ibb.co/2WV9gxD/onbulb-removebg-preview.png"
-            width={500}
+            src="https://i.ibb.co/jVc54wr/n2-removebg-preview.png"
+            width={228}
           />
+          <h4>Now Bulb is OFF</h4>
         </div>
       )}
       <button onClick={() => setOff(!on)}>{on ? "On" : "Off"}</button>
